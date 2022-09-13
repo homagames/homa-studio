@@ -1,8 +1,8 @@
 import slugify from '../utils/slugify'
 
 export default {
-  title: "Work",
-  name: 'work',
+  title: "Blog",
+  name: 'blog',
   type: "document",
   fields: [
     {
@@ -10,6 +10,23 @@ export default {
       description: "The name of this release",
       name: "title",
       type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Hero Image",
+      description: "The name of this release",
+      name: "heroImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Publish Date",
+      description: "Press the button to the right to pick a date.",
+      name: "publishDate",
+      type: "date",
+      options: {
+        dateFormat: "MMMM Do YYYY",
+      },
       validation: Rule => Rule.required()
     },
     {
@@ -49,8 +66,8 @@ export default {
   preview: {
     select: {
       title: 'title',
-      subtitle: 'campaignTitle',
-      media: 'teaserImage'
+      subtitle: 'publishDate',
+      media: 'heroImage'
     }
   }
 }

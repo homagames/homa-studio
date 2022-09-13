@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "shiftwalk-sanity-starter"
+    "name": "Homa"
   },
   "plugins": [
     "@sanity/base",
