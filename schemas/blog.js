@@ -30,6 +30,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Category',
+      name: 'category',
+      type: 'reference',
+      to: [{type: 'categories'}]
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

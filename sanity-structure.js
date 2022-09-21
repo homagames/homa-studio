@@ -53,7 +53,9 @@ export default () =>
             .items([
               S.listItem().title('Overview').child(S.editor().id('games').schemaType('games').documentId('singleton-games').views(getPreview('games'))).icon(FiCrosshair),
               S.divider(),
-              S.listItem().title('Case Studies').child(S.documentTypeList('caseStudies').title('Case Studies')).icon(FiTarget),
+              S.listItem().title('Success Stories').child(S.documentTypeList('caseStudies').title('Success Stories')).icon(FiTarget),
+              S.divider(),
+              S.listItem().title('Game Library').child(S.documentTypeList('caseStudies').title('Game Library')).icon(FiTarget),
               ,
             ])),
       S.divider(),
