@@ -15,6 +15,7 @@ import singletonTerms from './singletonTerms'
 import blog from './blog'
 import categories from './categories'
 import team from './team'
+import authors from './authors'
 import products from './products'
 import caseStudies from './case-studies'
 
@@ -37,6 +38,7 @@ export default createSchema({
     blog,
     categories,
     team,
+    authors,
     products,
     caseStudies,
     defaultImage,

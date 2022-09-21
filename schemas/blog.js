@@ -36,6 +36,12 @@ export default {
       to: [{type: 'categories'}]
     },
     {
+      title: 'Author',
+      name: 'author',
+      type: 'reference',
+      to: [{type: 'authors'}]
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

@@ -94,6 +94,8 @@ export default () =>
               S.listItem().title('Articles').child(S.documentTypeList('blog').title('Articles')).icon(FiEdit),
               S.divider(),
               S.listItem().title('Categories').child(S.documentTypeList('categories').title('Categories')).icon(FiBookmark),
+              S.divider(),
+              S.listItem().title('Authors').child(S.documentTypeList('authors').title('Authors')).icon(FiUsers),
               ,
             ])),
       S.divider(),
