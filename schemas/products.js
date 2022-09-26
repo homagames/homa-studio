@@ -7,9 +7,21 @@ export default {
   fields: [
     {
       title: "Title",
-      description: "The name of this release",
       name: "title",
       type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Hero Image",
+      name: "heroImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Intro Text',
+      name: 'introText',
+      type: 'text', 
+      rows: 4,
       validation: Rule => Rule.required()
     },
     {

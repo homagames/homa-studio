@@ -27,6 +27,16 @@ export default {
       title: "Company",
       name: "company",
       type: "string"
+    },
+    {
+      title: "LinkedIn",
+      name: "linkedIn",
+      type: "url"
+    },
+    {
+      title: "Twitter",
+      name: "twitter",
+      type: "url"
     }
   ],
   preview: {

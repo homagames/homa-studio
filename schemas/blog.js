@@ -36,6 +36,23 @@ export default {
       to: [{type: 'categories'}]
     },
     {
+      title: 'Author',
+      name: 'author',
+      type: 'reference',
+      to: [{type: 'authors'}]
+    },
+    {
+      title: 'Content Blocks',
+      name: 'contentBlocks',
+      description: 'The modular content blocks for this article',
+      type: 'array',
+      of: [
+        {type: 'textBlock', title: 'Text'},
+        {type: 'modularImageBlock', title: 'Image'},
+        {type: 'modularQuoteBlock', title: 'Quote'},
+      ],
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

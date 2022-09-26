@@ -11,6 +11,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Hero Image",
+      name: "heroImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

@@ -14,13 +14,18 @@ import singletonTerms from './singletonTerms'
 // Documents
 import blog from './blog'
 import categories from './categories'
+import authors from './authors'
 import team from './team'
+import games from './games'
 import products from './products'
 import caseStudies from './case-studies'
 
 // Common
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
+import modularTextBlock from './common/modularTextBlock'
+import modularImageBlock from './common/modularImageBlock'
+import modularQuoteBlock from './common/modularQuoteBlock'
 
 export default createSchema({
   name: 'default',
@@ -35,11 +40,16 @@ export default createSchema({
     singletonPrivacy,
     singletonTerms,
     blog,
+    authors,
     categories,
     team,
+    games,
     products,
     caseStudies,
     defaultImage,
+    modularTextBlock,
+    modularImageBlock,
+    modularQuoteBlock,
     seo
   ]),
 })
