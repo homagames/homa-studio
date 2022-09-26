@@ -16,11 +16,7 @@ import blog from './blog'
 import categories from './categories'
 import authors from './authors'
 import team from './team'
-<<<<<<< HEAD
 import games from './games'
-=======
-import authors from './authors'
->>>>>>> f9b89987c2ce48f3aa6531a4da9d7d3f65f1d54e
 import products from './products'
 import caseStudies from './case-studies'
 
@@ -47,11 +43,7 @@ export default createSchema({
     authors,
     categories,
     team,
-<<<<<<< HEAD
     games,
-=======
-    authors,
->>>>>>> f9b89987c2ce48f3aa6531a4da9d7d3f65f1d54e
     products,
     caseStudies,
     defaultImage,
