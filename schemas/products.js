@@ -18,11 +18,19 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Intro Text',
+      title: 'Intro Text (Short)',
       name: 'introText',
+      description: 'The text used as a teaser for this product when displayed on the Homa Lab parent page.',
       type: 'text', 
       rows: 4,
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Intro Text (Long)',
+      name: 'introTextLong',
+      description: 'The intro text for this product when displayed on the actual product child page.',
+      type: 'text', 
+      rows: 4
     },
     {
       title: 'Sections (Multiple Sections)',
