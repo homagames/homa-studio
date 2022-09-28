@@ -17,6 +17,57 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Intro Text",
+      name: 'introText',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Our Community Heading",
+      name: 'ourCommunityHeading',
+      type: 'text',
+      rows: 3,
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Our Community Stats',
+      name: 'ourCommunityStats',
+      type: 'array',
+      of: [
+        {
+          title: 'Item',
+          name: 'item',
+          type: 'object',
+          fields: [
+            {name: 'number', type: 'string', title: 'Number', description: 'eg: "200+"', validation: Rule => Rule.required()},
+            {name: 'thing', type: 'text', rows: 3, title: 'Thing', description: 'eg: "Countries of Origin"', validation: Rule => Rule.required()},
+          ],
+          preview: {
+            select: {
+              number: 'number',
+              thing: 'thing',
+            },
+            prepare(selection) {
+              const {number, thing} = selection
+              return {
+                title: number,
+                subtitle: `${thing}`,
+              }
+            }
+          }
+        }
+      ],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Our People CTA Heading",
+      name: 'ourPeopleCtaHeading',
+      type: 'text',
+      rows: 3,
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Services List',
       name: 'servicesList',
       type: 'array',

@@ -1,5 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 import IframePreview from './preview/IFramePreview'
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 
 import {
   FiHome,
@@ -55,7 +56,11 @@ export default () =>
               S.divider(),
               S.listItem().title('Success Stories').child(S.documentTypeList('caseStudies').title('Success Stories')).icon(FiTarget),
               S.divider(),
-              S.listItem().title('Game Library').child(S.documentTypeList('gamesLibrary').title('Game Library')).icon(FiTarget),
+              orderableDocumentListDeskItem({
+                type: 'gamesLibrary',
+                title: 'Game Library',
+                icon: FiTarget
+              }),
               ,
             ])),
       S.divider(),

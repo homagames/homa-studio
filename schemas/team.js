@@ -20,8 +20,7 @@ export default {
     {
       title: "Job Title",
       name: "jobTitle",
-      type: "string",
-      validation: Rule => Rule.required()
+      type: "string"
     },
     {
       title: "Company",
