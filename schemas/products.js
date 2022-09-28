@@ -25,6 +25,102 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Sections (Multiple Sections)',
+      name: 'contentSections',
+      description: 'Use this if this product has MULTIPLE sections, eg: "Skeleton", "Game Doctor", "Icon Tester"',
+      type: 'array',
+      of: [
+        {
+          title: 'Section',
+          type: 'object',
+          name: 'section',
+          fields: [
+            {
+              title: 'Title',
+              name: 'title',
+              type: 'string',
+            },
+            {
+              title: 'Short Description',
+              name: 'shortDescription',
+              type: 'string',
+            },
+            {
+              title: 'Long Description',
+              name: 'longDescription',
+              type: 'text',
+              rows: 3,
+            },
+            {
+              title: 'Section Downloads / Links',
+              name: 'sectionDownloadsLinks',
+              description: 'The downloads or links for this section',
+              type: 'array',
+              of: [
+                {
+                  title: 'Section Item',
+                  type: 'object',
+                  name: 'sectionItem',
+                  fields: [
+                    {
+                      title: 'Button Text',
+                      name: 'buttonText',
+                      type: 'string',
+                    },
+                    {
+                      title: 'Button URL',
+                      name: 'buttonUrl',
+                      type: 'url',
+                    },      
+                  ]
+                }
+              ],
+            },
+            {
+              title: 'Section Items',
+              name: 'sectionItems',
+              description: 'The items for this section',
+              type: 'array',
+              of: [
+                {
+                  title: 'Section Item',
+                  type: 'object',
+                  name: 'sectionItem',
+                  fields: [
+                    {
+                      title: 'Text',
+                      name: 'text',
+                      type: 'string',
+                    },      
+                  ]
+                }
+              ],
+            }
+          ],
+        }
+      ],
+    },
+    {
+      title: 'Section Items (Single Section)',
+      name: 'sectionItemsSingleSection',
+      description: 'The items for this product, use this if the product has a SINGLE section',
+      type: 'array',
+      of: [
+        {
+          title: 'Section Item',
+          type: 'object',
+          name: 'sectionItem',
+          fields: [
+            {
+              title: 'Text',
+              name: 'text',
+              type: 'string',
+            },      
+          ]
+        }
+      ],
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

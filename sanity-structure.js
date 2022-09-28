@@ -61,6 +61,8 @@ export default () =>
       S.divider(),
       S.listItem().title('About').child(S.editor().id('about').schemaType('about').documentId('singleton-about').views(getPreview('about'))).icon(FiGlobe),
       S.divider(),
+      S.listItem().title('Careers').child(S.editor().id('careers').schemaType('careers').documentId('singleton-careers').views(getPreview('careers'))).icon(FiUsers),
+      S.divider(),
       S.listItem()
         .title('Homa Lab')
         .child(

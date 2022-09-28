@@ -7,6 +7,7 @@ import singletonGames from './singletonGames'
 import singletonHomaLab from './singletonHomaLab'
 import singletonCommunity from './singletonCommunity'
 import singletonContact from './singletonContact'
+import singletonCareers from './singletonCareers'
 import singletonAbout from './singletonAbout'
 import singletonPrivacy from './singletonPrivacy'
 import singletonTerms from './singletonTerms'
@@ -36,6 +37,7 @@ export default createSchema({
     singletonHomaLab,
     singletonCommunity,
     singletonContact,
+    singletonCareers,
     singletonAbout,
     singletonPrivacy,
     singletonTerms,

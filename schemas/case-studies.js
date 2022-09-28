@@ -44,6 +44,37 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Content Sections',
+      name: 'contentSections',
+      description: 'The modular content sections for this article',
+      type: 'array',
+      of: [
+        {
+          title: 'Section',
+          type: 'object',
+          name: 'section',
+          fields: [
+            {
+              title: 'Title',
+              name: 'title',
+              type: 'string',
+            },
+            {
+              title: 'Content Blocks',
+              name: 'contentBlocks',
+              description: 'The modular content blocks for this article',
+              type: 'array',
+              of: [
+                {type: 'textBlock', title: 'Text'},
+                {type: 'modularImageBlock', title: 'Image'},
+                {type: 'modularQuoteBlock', title: 'Quote'},
+              ],
+            }
+          ],
+        }
+      ],
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

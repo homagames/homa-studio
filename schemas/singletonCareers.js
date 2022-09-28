@@ -1,6 +1,6 @@
 export default {
-  title: 'Home',
-  name: 'home',
+  title: 'Careers',
+  name: 'careers',
   type: 'document',
   __experimental_actions: ['update', 'create', 'delete', 'publish'],
   fields: [
@@ -8,39 +8,6 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Intro Text',
-      name: 'introText',
-      type: 'text',
-      rows: 3,
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Make a Game CTA Heading',
-      name: 'makeAGameCtaHeading',
-      type: 'string',
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Make a Game CTA Text',
-      name: 'makeAGameCtaText',
-      type: 'text',
-      rows: 3,
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Homa Academy CTA Heading',
-      name: 'homaAcademyCtaHeading',
-      type: 'string',
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Homa Academy CTA Text',
-      name: 'homaAcademyCtaText',
-      type: 'text',
-      rows: 3,
       validation: Rule => Rule.required()
     },
     {

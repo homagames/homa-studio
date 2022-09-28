@@ -18,6 +18,12 @@ export default {
       description: 'Optional supporting caption',
       name: 'caption',
       type: 'string'
+    },
+    {
+      title: 'Source (Optional)',
+      description: 'Optional source of this image, eg: "GettyImages"',
+      name: 'source',
+      type: 'string'
     }
   ]
 }
