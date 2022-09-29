@@ -1,3 +1,7 @@
+import {
+  FiTarget
+} from 'react-icons/fi'
+
 export default {
   title: 'Home',
   name: 'home',
@@ -16,6 +20,25 @@ export default {
       type: 'text',
       rows: 3,
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Featured Games',
+      description: 'The games to feature on the home page',
+      name: 'featuredGames',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          icon: FiTarget,
+          options: {
+            disableNew: true,
+          },
+          to: [
+            {type: 'gamesLibrary'}
+          ]
+        }
+      ],
+      validation: Rule => Rule.required().min(3).max(3)
     },
     {
       title: 'Make a Game CTA Heading',

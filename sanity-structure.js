@@ -76,8 +76,11 @@ export default () =>
             .items([
               S.listItem().title('Overview').child(S.editor().id('homaLab').schemaType('homaLab').documentId('singleton-homa-lab').views(getPreview('homaLab'))).icon(FiCodesandbox),
               S.divider(),
-              S.listItem().title('Products').child(S.documentTypeList('products').title('Products')).icon(FiCodepen),
-              ,
+              orderableDocumentListDeskItem({
+                type: 'products',
+                title: 'Products',
+                icon: FiCodepen
+              }),
             ])),
       S.divider(),
       S.listItem()

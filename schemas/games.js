@@ -17,6 +17,19 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Gameplay Video",
+      name: "gameplayVideo",
+      type: "url",
+      description: "This should come from Vimeo's direct URL's"
+    },
+    {
+      title: "Installs",
+      name: "installs",
+      type: "string",
+      description: "How many times this game has been installed, eg: '1,000,000+'",
+      validation: Rule => Rule.required()
+    },
+    {
       title: "Partner Name",
       description: "Name of the partner for this game if it had one, eg: 'Funcell'",
       name: "partnerName",
