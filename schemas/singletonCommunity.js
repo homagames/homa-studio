@@ -19,6 +19,35 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'TikToks',
+      name: 'tikToks',
+      type: 'array',
+      of: [
+        {
+          title: 'Item',
+          name: 'item',
+          type: 'object',
+          fields: [
+            {name: 'url', type: 'url', title: 'Url', description: 'The link to this video on TikTok', validation: Rule => Rule.required()},
+            {name: 'video', type: 'string', title: 'Video', description: 'The video link from Vimeo', validation: Rule => Rule.required()},
+          ],
+          preview: {
+            select: {
+              url: 'url',
+            },
+            prepare(selection) {
+              const {url} = selection
+              return {
+                title: 'TikTok Video',
+                subtitle: `${url}`,
+              }
+            }
+          }
+        }
+      ],
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Roadmap',
       name: 'roadmap',
       type: 'array',
