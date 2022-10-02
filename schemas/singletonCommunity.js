@@ -30,6 +30,7 @@ export default {
           fields: [
             {name: 'url', type: 'url', title: 'Url', description: 'The link to this video on TikTok', validation: Rule => Rule.required()},
             {name: 'video', type: 'string', title: 'Video', description: 'The video link from Vimeo', validation: Rule => Rule.required()},
+            {name: 'postDate', type: "date", options: { dateFormat: "MMMM Do YYYY", }, title: 'Post Date', description: 'The date this TikTok was posted', validation: Rule => Rule.required()},
           ],
           preview: {
             select: {

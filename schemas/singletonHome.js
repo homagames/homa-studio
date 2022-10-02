@@ -15,6 +15,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Hero Image",
+      name: "heroImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Intro Text',
       name: 'introText',
       type: 'text',
