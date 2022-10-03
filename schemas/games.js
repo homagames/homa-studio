@@ -23,10 +23,10 @@ export default {
       description: "This should come from Vimeo's direct URL's"
     },
     {
-      title: "Installs",
+      title: "Statistic",
       name: "installs",
       type: "string",
-      description: "How many times this game has been installed, eg: '1,000,000+'",
+      description: "The statistic for this game, eg: '1,000,000+ Downloads'",
       validation: Rule => Rule.required()
     },
     {

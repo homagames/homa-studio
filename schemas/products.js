@@ -23,6 +23,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Product Visual",
+      name: "productVisual",
+      type: "defaultImage",
+      description: "The visual that sits over the hero image and is referenced on the home page product scroll area.",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Intro Text (Short)',
       name: 'introText',
       description: 'The text used as a teaser for this product when displayed on the Homa Lab parent page.',
