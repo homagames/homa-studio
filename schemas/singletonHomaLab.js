@@ -17,6 +17,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Mobile Hero Image",
+      name: "mobileHeroImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

@@ -19,6 +19,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Mobile Hero Image",
+      name: "mobileHeroImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'TikToks',
       name: 'tikToks',
       type: 'array',
