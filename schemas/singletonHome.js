@@ -50,7 +50,7 @@ export default {
           ]
         }
       ],
-      validation: Rule => Rule.required().min(3).max(3)
+      validation: Rule => Rule.required().min(2)
     },
     {
       title: 'Make a Game CTA Heading',
