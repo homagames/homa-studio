@@ -121,4 +121,6 @@ export default () =>
               S.divider(),
               S.listItem().title('Terms').child(S.editor().id('terms').schemaType('terms').documentId('singleton-terms').views(getPreview('terms'))).icon(FiFileText),
             ])),
+      S.divider(),
+      S.listItem().title('Redirects').child(S.documentTypeList('redirect').title('Redirects')).icon(FiEdit),
     ]);

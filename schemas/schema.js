@@ -20,6 +20,7 @@ import team from './team'
 import games from './games'
 import products from './products'
 import caseStudies from './case-studies'
+import redirects from './redirects'
 
 // Common
 import seo from './common/seo'
@@ -42,6 +43,7 @@ export default createSchema({
     singletonPrivacy,
     singletonTerms,
     blog,
+    redirects,
     authors,
     categories,
     team,

@@ -57,6 +57,11 @@ export default {
       name: 'discord',
       type: 'url',
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'App Ads Txt File',
+      name: 'appAdsTxtFile',
+      type: 'file'
     }
   ],
   preview: {
