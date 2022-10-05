@@ -64,7 +64,7 @@ export default {
       type: 'file'
     }
   ],
-  preview: {
+  preview: { 
     select: {
       title: 'title'
     },
