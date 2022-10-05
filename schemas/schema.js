@@ -11,6 +11,7 @@ import singletonCareers from './singletonCareers'
 import singletonAbout from './singletonAbout'
 import singletonPrivacy from './singletonPrivacy'
 import singletonTerms from './singletonTerms'
+import singletonAdmin from './singletonAdmin'
 
 // Documents
 import blog from './blog'
@@ -20,7 +21,6 @@ import team from './team'
 import games from './games'
 import products from './products'
 import caseStudies from './case-studies'
-import redirects from './redirects'
 
 // Common
 import seo from './common/seo'
@@ -42,8 +42,8 @@ export default createSchema({
     singletonAbout,
     singletonPrivacy,
     singletonTerms,
+    singletonAdmin,
     blog,
-    redirects,
     authors,
     categories,
     team,

@@ -122,5 +122,5 @@ export default () =>
               S.listItem().title('Terms').child(S.editor().id('terms').schemaType('terms').documentId('singleton-terms').views(getPreview('terms'))).icon(FiFileText),
             ])),
       S.divider(),
-      S.listItem().title('Redirects').child(S.documentTypeList('redirect').title('Redirects')).icon(FiEdit),
+      S.listItem().title('Admin').child(S.editor().id('admin').schemaType('admin').documentId('singleton-admin').views(getPreview('admin'))).icon(FiGlobe),
     ]);
