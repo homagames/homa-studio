@@ -11,6 +11,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Text',
+      name: 'text',
+      type: 'array', 
+      of: [{type: 'block'}]
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'
