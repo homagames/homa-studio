@@ -12,6 +12,7 @@ import singletonAbout from './singletonAbout'
 import singletonPrivacy from './singletonPrivacy'
 import singletonTerms from './singletonTerms'
 import singletonAdmin from './singletonAdmin'
+import singletonFaqs from './singletonFaqs'
 
 // Documents
 import blog from './blog'
@@ -42,6 +43,7 @@ export default createSchema({
     singletonAbout,
     singletonPrivacy,
     singletonTerms,
+    singletonFaqs,
     singletonAdmin,
     blog,
     authors,
