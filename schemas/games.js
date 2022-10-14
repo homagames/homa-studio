@@ -45,6 +45,12 @@ export default {
       name: "appStoreLink",
       type: "url"
     },
+    {
+      title: "App Tile Image",
+      name: "appTileImage",
+      type: "defaultImage",
+      validation: Rule => Rule.required()
+    },
     // {
     //   name: 'slug',
     //   type: 'slug',
@@ -76,7 +82,8 @@ export default {
   ],
   preview: {
     select: {
-      title: 'title'
+      title: 'title',
+      media: 'appTileImage'
     }
   }
 }

@@ -1,3 +1,5 @@
+import { FiArrowDownCircle } from "react-icons/fi"
+
 export default {
   title: 'FAQs',
   name: 'faqs',
@@ -15,6 +17,35 @@ export default {
       name: 'text',
       type: 'array', 
       of: [{type: 'block'}]
+    },
+    {
+      title: 'FAQs',
+      name: 'faqs',
+      type: 'array',
+      of: [
+        {
+          title: 'Item',
+          name: 'item',
+          type: 'object',
+          icon: FiArrowDownCircle,
+          fields: [
+            {name: 'question', type: 'string', title: 'Question'},
+            {name: 'answer', type: 'array', of: [{type: 'block'}], title: 'Answer'}
+          ],
+          preview: {
+            select: {
+              question: 'question'
+            },
+            prepare(selection) {
+              const {question} = selection
+              return {
+                title: question
+              }
+            }
+          }
+        }
+      ],
+      validation: Rule => Rule.required()
     },
     {
       title: 'SEO / Share Settings',
