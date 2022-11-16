@@ -123,6 +123,8 @@ export default () =>
               S.listItem().title('Privacy').child(S.editor().id('privacy').schemaType('privacy').documentId('singleton-privacy').views(getPreview('privacy'))).icon(FiFileText),
               S.divider(),
               S.listItem().title('Terms').child(S.editor().id('terms').schemaType('terms').documentId('singleton-terms').views(getPreview('terms'))).icon(FiFileText),
+              S.divider(),
+              S.listItem().title('Subscription Terms').child(S.editor().id('subscriptionTerms').schemaType('subscriptionTerms').documentId('singleton-subscriptionTerms').views(getPreview('subscriptionTerms'))).icon(FiFileText),
             ])),
       S.divider(),
       S.listItem().title('Admin').child(S.editor().id('admin').schemaType('admin').documentId('singleton-admin').views(getPreview('admin'))).icon(FiGlobe),

@@ -53,11 +53,17 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Discord',
+      title: 'Discord (Web3)',
       name: 'discord',
       type: 'url',
       validation: Rule => Rule.required()
-    }
+    },
+    {
+      title: 'Discord (Game Makers)',
+      name: 'discordGameMakers',
+      type: 'url',
+      validation: Rule => Rule.required()
+    },
   ],
   preview: { 
     select: {
