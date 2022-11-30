@@ -16,7 +16,8 @@ import {
   FiCodesandbox,
   FiSmile,
   FiMail,
-  FiCheckSquare
+  FiCheckSquare,
+  FiSun
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -109,6 +110,8 @@ export default () =>
               S.listItem().title('Authors').child(S.documentTypeList('authors').title('Authors')).icon(FiUsers),
               ,
             ])),
+      S.divider(),
+      S.listItem().title('Marketing Landing Pages').child(S.documentTypeList('marketingPages').title('Marketing Landing Pages')).icon(FiSun),
       S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact').views(getPreview('contact'))).icon(FiMail),
       S.divider(),
