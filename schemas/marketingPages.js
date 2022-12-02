@@ -25,6 +25,7 @@ export default {
         {type: 'modularMarketingLongIconListBlock', title: 'Long Icon List Block'},
         {type: 'modularMarketingMultipleCtaBlock', title: 'Multiple CTA Block'},
         {type: 'modularMarketingTextIconBlock', title: 'Text + Icon Block'},
+        {type: 'modularMarketingIconBlock', title: 'Icon Block'},
         {type: 'modularMarketingHubspotFormBlock', title: 'Hubspot Form Block'},
         {type: 'modularMarketingCareersBlock', title: 'Careers Block'},
         {type: 'modularMarketingCaseStudiesBlock', title: 'Case Studies Block'},
