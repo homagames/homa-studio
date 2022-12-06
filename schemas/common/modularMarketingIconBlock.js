@@ -57,6 +57,20 @@ export default {
         ]
       }],
       validation: Rule => Rule.required().max(6)
+    },
+    {
+      title: 'Remove Top Border',
+      name: 'removeTopBorder',
+      description: 'Toggling this on will remove the border from the top of this component',
+      type: 'boolean',
+      defaultValue: false,
+    },
+    {
+      title: 'Remove Bottom Border',
+      name: 'removeBottomBorder',
+      description: 'Toggling this on will remove the border from the bottom of this component',
+      type: 'boolean',
+      defaultValue: false,
     }
   ],
   preview: { 

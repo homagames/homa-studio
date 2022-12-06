@@ -1,9 +1,9 @@
 import { FiList } from 'react-icons/fi'
 
 export default {
-  title: 'Long Icon List Block',
+  title: 'Stat List Block',
   type: 'object',
-  name: 'modularMarketingLongIconListBlock',
+  name: 'modularMarketingStatListBlock',
   icon: FiList,
   fields: [
     {
@@ -21,33 +21,20 @@ export default {
         type: 'object',
         fields: [
           {
-            title: "Sub Heading",
-            name: "subHeading",
-            type: "string",
-            validation: Rule => Rule.required()
-          },
-          {
             title: "Heading",
             name: "heading",
             type: "string",
             validation: Rule => Rule.required()
           },
           {
-            title: "Icon",
-            name: "icon",
-            type: "defaultImage",
-            validation: Rule => Rule.required()
+            title: "Text",
+            name: "text",
+            type: "text",
+            rows: 2
           }
         ]
       }],
       validation: Rule => Rule.required().max(6)
-    },
-    {
-      title: 'Character?',
-      name: 'character',
-      description: 'Toggling this on will add a character to the bottom of this list',
-      type: 'boolean',
-      initialValue: false,
     },
     {
       title: 'Remove Top Border',
@@ -72,7 +59,7 @@ export default {
       const {title} = selection
 
       return {
-        title: 'Long Icon List Block',
+        title: 'Stat List Block',
         subtitle: title
       }
     }

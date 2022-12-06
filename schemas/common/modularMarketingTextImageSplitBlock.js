@@ -31,6 +31,20 @@ export default {
       description: 'Toggling this on will flip the image to be on the left and text on the right',
       type: 'boolean',
       defaultValue: false,
+    },
+    {
+      title: 'Remove Top Padding',
+      name: 'removeTopPadding',
+      description: 'Toggling this on will remove the spacing from the top of this component',
+      type: 'boolean',
+      defaultValue: false,
+    },
+    {
+      title: 'Remove Bottom Padding',
+      name: 'removeBottomPadding',
+      description: 'Toggling this on will remove the spacing from the bottom of this component',
+      type: 'boolean',
+      defaultValue: false,
     }
   ],
   preview: {
