@@ -45,11 +45,17 @@ export default {
             description: 'The link for the CTA button',
             type: 'url',
             hidden: ({ parent, value }) => !value && !parent?.ctaButtonText
-          },
+          }
         ]
       }],
       validation: Rule => Rule.required().max(6)
     },
+    {
+      title: 'Internal ID',
+      name: 'internalId',
+      type: 'string',
+      description: 'used as an anchor for in-page links (only required if you want to link to this section), must be unique, eg: "block-1"'
+    }
   ],
   preview: { 
     select: {

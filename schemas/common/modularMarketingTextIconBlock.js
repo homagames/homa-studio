@@ -70,6 +70,12 @@ export default {
         ], // <-- predefined values
         layout: 'radio' // <-- defaults to 'dropdown'
       }
+    },
+    {
+      title: 'Internal ID',
+      name: 'internalId',
+      type: 'string',
+      description: 'used as an anchor for in-page links (only required if you want to link to this section), must be unique, eg: "block-1"'
     }
   ],
   preview: {

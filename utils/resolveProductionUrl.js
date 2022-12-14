@@ -10,13 +10,14 @@ const globalSlugs = {
   products: '/homa-lab',
   community: '/community',
   privacy: '/privacy',
+  marketingPages: '/marketing'
 }
 
 const secret = process.env.SANITY_STUDIO_SANITY_PREVIEW_SECRET
 export const getGlobalSlug = (slug) => globalSlugs[slug]
 
 // Change remote url...
-const remoteURL = 'https://homa.vercel.app'
+const remoteURL = 'https://homagames.com'
 const localURL = 'http://localhost:3000'
 export const previewURL = window.location.hostname === 'localhost' ? localURL : remoteURL
 

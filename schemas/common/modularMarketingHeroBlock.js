@@ -21,12 +21,6 @@ export default {
       rows: 3,
     },
     {
-      title: 'Background Image',
-      description: '[OPTIONAL] will add a background image instead of a pink gradient',
-      name: 'backgroundImage',
-      type: 'defaultImage',
-    },
-    {
       title: 'Background Landscape',
       name: 'backgroundLandscape',
       type: 'string',
@@ -72,10 +66,17 @@ export default {
       type: 'string',
     },
     {
-      title: 'CTA Button URL',
+      title: 'CTA Button External URL',
       name: 'ctaButtonUrl',
-      description: 'The link for the CTA button',
+      description: 'The External link for the CTA button',
       type: 'url',
+      hidden: ({ parent, value }) => !value && !parent?.ctaButtonText
+    },
+    {
+      title: 'CTA Button Internal ID',
+      name: 'ctaButtonId',
+      description: 'The Internal link for the CTA button, used alongside "Internal ID" within other modules',
+      type: 'string',
       hidden: ({ parent, value }) => !value && !parent?.ctaButtonText
     },
   ],
