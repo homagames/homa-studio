@@ -50,6 +50,7 @@ export default {
         {type: 'textBlock', title: 'Text'},
         {type: 'modularImageBlock', title: 'Image'},
         {type: 'modularQuoteBlock', title: 'Quote'},
+        {type: 'embedBlock', title: 'Embed'},
       ],
     },
     {

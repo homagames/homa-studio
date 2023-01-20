@@ -29,6 +29,7 @@ import marketingPages from './marketingPages'
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
 import modularTextBlock from './common/modularTextBlock'
+import modularEmbedBlock from './common/modularEmbedBlock'
 import modularImageBlock from './common/modularImageBlock'
 import modularQuoteBlock from './common/modularQuoteBlock'
 import modularMarketingHeroBlock from './common/modularMarketingHeroBlock'
@@ -73,6 +74,7 @@ export default createSchema({
     caseStudies,
     defaultImage,
     modularTextBlock,
+    modularEmbedBlock,
     modularImageBlock,
     modularQuoteBlock,
     modularMarketingHeroBlock,
