@@ -30,8 +30,7 @@ export default {
             title: "Text",
             name: "text",
             type: "text",
-            rows: 2,
-            validation: Rule => Rule.required()
+            rows: 2
           },
           {
             title: 'CTA Button Text',

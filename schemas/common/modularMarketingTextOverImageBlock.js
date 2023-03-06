@@ -9,15 +9,13 @@ export default {
     {
       title: 'Heading',
       name: 'heading',
-      type: 'string',
-      validation: Rule => Rule.required()
+      type: 'string'
     },
     {
       title: 'Text',
       name: 'text',
       type: 'array', 
-      of: [{type: 'block'}],
-      validation: Rule => Rule.required()
+      of: [{type: 'block'}]
     },
     {
       title: 'Image',
