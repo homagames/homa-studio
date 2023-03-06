@@ -11,6 +11,12 @@ export default {
       name: 'image',
       type: 'defaultImage',
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Link',
+      name: 'link',
+      type: 'url',
+      description: '(Optional) Add a link to this image',
     }
   ],
   preview: {
