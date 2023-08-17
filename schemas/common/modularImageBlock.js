@@ -15,8 +15,8 @@ export default {
     {
       title: 'Link',
       name: 'link',
-      type: 'url',
       description: '(Optional) Add a link to this image',
+      type: 'url'
     }
   ],
   preview: {

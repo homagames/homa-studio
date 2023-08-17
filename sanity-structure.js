@@ -6,6 +6,7 @@ import {
   FiHome,
   FiCamera,
   FiGlobe,
+  FiList,
   FiUsers,
   FiFileText,
   FiEdit,
@@ -103,6 +104,8 @@ export default () =>
           S.list()
             .title('Blog')
             .items([
+              S.listItem().title('Overview').child(S.editor().id('blogLanding').schemaType('blogLanding').documentId('singleton-blog').views(getPreview('blogLanding'))).icon(FiSmile),
+              S.divider(),
               S.listItem().title('Articles').child(S.documentTypeList('blog').title('Articles')).icon(FiEdit),
               S.divider(),
               S.listItem().title('Categories').child(S.documentTypeList('categories').title('Categories')).icon(FiBookmark),
@@ -131,4 +134,6 @@ export default () =>
             ])),
       S.divider(),
       S.listItem().title('Admin').child(S.editor().id('admin').schemaType('admin').documentId('singleton-admin').views(getPreview('admin'))).icon(FiGlobe),
+      S.divider(),
+      S.listItem().title('Navigations').child(S.editor().id('navigation').schemaType('navigation').documentId('singleton-navigation').views(getPreview('navigation'))).icon(FiList),
     ]);

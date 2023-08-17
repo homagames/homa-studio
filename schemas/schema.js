@@ -13,6 +13,8 @@ import singletonPrivacy from './singletonPrivacy'
 import singletonTerms from './singletonTerms'
 import singletonSubscriptionTerms from './singletonSubscriptionTerms'
 import singletonAdmin from './singletonAdmin'
+import singletonNavigation from './singletonNavigation'
+import singletonBlog from './singletonBlog'
 import singletonFaqs from './singletonFaqs'
 
 // Documents
@@ -28,6 +30,9 @@ import marketingPages from './marketingPages'
 // Common
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
+import defaultNavItem from './common/defaultNavItem'
+import defaultNavItemNoSub from './common/defaultNavItemNoSub'
+import defaultNavItemSocial from './common/defaultNavItemSocial'
 import modularTextBlock from './common/modularTextBlock'
 import modularEmbedBlock from './common/modularEmbedBlock'
 import modularImageBlock from './common/modularImageBlock'
@@ -54,6 +59,7 @@ export default createSchema({
   types: schemaTypes.concat([
     singletonHome,
     singletonGames,
+    singletonBlog,
     singletonHomaLab,
     singletonCommunity,
     singletonContact,
@@ -63,6 +69,7 @@ export default createSchema({
     singletonTerms,
     singletonSubscriptionTerms,
     singletonFaqs,
+    singletonNavigation,
     singletonAdmin,
     blog,
     authors,
@@ -73,6 +80,9 @@ export default createSchema({
     marketingPages,
     caseStudies,
     defaultImage,
+    defaultNavItem,
+    defaultNavItemNoSub,
+    defaultNavItemSocial,
     modularTextBlock,
     modularEmbedBlock,
     modularImageBlock,
