@@ -2,7 +2,7 @@ export default {
   title: 'Terms',
   name: 'terms',
   type: 'document',
-  __experimental_actions: ['update', 'create', 'delete', 'publish'],
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       title: 'Title',
@@ -13,8 +13,7 @@ export default {
     {
       title: 'Text',
       name: 'text',
-      type: 'array', 
-      of: [{type: 'block'}]
+      type: 'contentRich'
     },
     {
       title: 'SEO / Share Settings',

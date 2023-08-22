@@ -17,7 +17,8 @@
     "media",
     "@sanity/production-preview",
     "vercel-deploy",
-    "@sanity/orderable-document-list"
+    "@sanity/orderable-document-list",
+    "another-table"
   ],
   "env": {
     "development": {

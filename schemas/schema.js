@@ -31,6 +31,7 @@ import marketingPages from './marketingPages'
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
 import defaultNavItem from './common/defaultNavItem'
+import contentRich from './common/contentRich'
 import defaultNavItemNoSub from './common/defaultNavItemNoSub'
 import defaultNavItemSocial from './common/defaultNavItemSocial'
 import modularTextBlock from './common/modularTextBlock'
@@ -74,6 +75,7 @@ export default createSchema({
     blog,
     authors,
     categories,
+    contentRich,
     team,
     games,
     products,
