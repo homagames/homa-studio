@@ -1,8 +1,9 @@
 import React from "react";
 
-const highlightRender = (props) => (
-  <span style={{ backgroundColor: "yellow" }}>{props.children}</span>
-);
+const highlightRender = (props) => (<span style={{ backgroundColor: "#C9E31E" }}>{props.children}</span>);
+const highlightRenderTangerine = (props) => (<span style={{ backgroundColor: "#FF7855" }}>{props.children}</span>);
+const highlightRenderPlum = (props) => (<span style={{ backgroundColor: "#6E5AB4", color: '#FFF' }}>{props.children}</span>);
+const highlightRenderPink = (props) => (<span style={{ backgroundColor: "#FF91FA" }}>{props.children}</span>);
 
 export default {
   name: 'contentRich',
@@ -17,11 +18,35 @@ export default {
           { title: 'Emphasis', value: 'em' },
           { title: 'Code', value: 'code' },
           {
-            title: "Highlight",
+            title: "Highlight Lime",
             value: "highlight",
             blockEditor: {
-              icon: () => "H",
+              icon: () => <span style={{ backgroundColor: "#C9E31E" }}>Lime</span>,
               render: highlightRender,
+            },
+          },
+          {
+            title: "Highlight Tangerine",
+            value: "strikeeeee",
+            blockEditor: {
+              icon: () => <span style={{ backgroundColor: "#FF7855" }}>Tangerine</span>,
+              render: highlightRenderTangerine,
+            },
+          },
+          {
+            title: "Highlight Plum",
+            value: "hiihhggg",
+            blockEditor: {
+              icon: () => <span style={{ backgroundColor: "#6E5AB4", color: "#FFF" }}>Tangerine</span>,
+              render: highlightRenderPlum,
+            },
+          },
+          {
+            title: "Highlight Pink",
+            value: "piinnnkk",
+            blockEditor: {
+              icon: () => <span style={{ backgroundColor: "#FF91FA" }}>Tangerine</span>,
+              render: highlightRenderPink,
             },
           },
         ],
@@ -82,6 +107,11 @@ export default {
         name: 'title',
         type: 'string',
         hidden: true
+      },{
+        name: 'dotted',
+        title: 'Dashed Line',
+        description: 'Toggle this on to make the line dashed rather than solid',
+        type: 'boolean',
       }],
       preview: {
         prepare() {
