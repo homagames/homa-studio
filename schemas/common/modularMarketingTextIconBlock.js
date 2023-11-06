@@ -38,6 +38,13 @@ export default {
       hidden: ({ parent, value }) => !value && !parent?.ctaButtonText
     },
     {
+      title: 'CTA Button Internal ID',
+      name: 'ctaButtonInternalId',
+      description: 'The internal link for the CTA button',
+      type: 'string',
+      hidden: ({ parent, value }) => !value && !parent?.ctaButtonText
+    },
+    {
       title: 'Animated Icon',
       name: 'animatedIcon',
       type: 'string',

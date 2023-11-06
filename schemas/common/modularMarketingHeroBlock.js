@@ -13,10 +13,17 @@ export default {
       rows: 2,
       validation: Rule => Rule.required()
     },
+    // {
+    //   title: 'Text',
+    //   description: '[OPTIONAL] will add a text block below the hero heading',
+    //   name: 'text',
+    //   type: 'text',
+    //   rows: 3,
+    // },
     {
       title: 'Text',
       description: '[OPTIONAL] will add a text block below the hero heading',
-      name: 'text',
+      name: 'heroText',
       type: 'text',
       rows: 3,
     },

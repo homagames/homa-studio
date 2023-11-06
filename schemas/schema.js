@@ -53,6 +53,7 @@ import modularMarketingTextIconBlock from './common/modularMarketingTextIconBloc
 import modularMarketingHubspotFormBlock from './common/modularMarketingHubspotFormBlock'
 import modularMarketingIconBlock from './common/modularMarketingIconBlock'
 import modularMarketingStatListBlock from './common/modularMarketingStatListBlock'
+import modularMarketingImageCarouselBlock from './common/modularMarketingImageCarouselBlock'
 
 export default createSchema({
   name: 'default',
@@ -104,6 +105,7 @@ export default createSchema({
     modularMarketingHubspotFormBlock,
     modularMarketingIconBlock,
     modularMarketingStatListBlock,
+    modularMarketingImageCarouselBlock,
     seo
   ]),
 })
