@@ -59,7 +59,10 @@ export default {
               {
                 name: 'href',
                 type: 'url',
-                title: 'URL'
+                title: 'URL',
+                validation: Rule => Rule.uri({
+                  scheme: ['http', 'https', 'mailto', 'tel']
+                })
               },
               {
                 title: 'Open in new tab',
