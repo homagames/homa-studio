@@ -10,6 +10,7 @@ const globalSlugs = {
   products: '/homa-lab',
   community: '/community',
   privacy: '/privacy',
+  eula: '/end-user-license-agreement',
   marketingPages: '/marketing'
 }
 

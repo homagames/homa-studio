@@ -54,6 +54,7 @@ import modularMarketingHubspotFormBlock from './common/modularMarketingHubspotFo
 import modularMarketingIconBlock from './common/modularMarketingIconBlock'
 import modularMarketingStatListBlock from './common/modularMarketingStatListBlock'
 import modularMarketingImageCarouselBlock from './common/modularMarketingImageCarouselBlock'
+import singletonEula from './singletonEula'
 
 export default createSchema({
   name: 'default',
@@ -70,6 +71,7 @@ export default createSchema({
     singletonPrivacy,
     singletonTerms,
     singletonSubscriptionTerms,
+    singletonEula,
     singletonFaqs,
     singletonNavigation,
     singletonAdmin,

@@ -131,6 +131,8 @@ export default () =>
               S.listItem().title('Terms').child(S.editor().id('terms').schemaType('terms').documentId('singleton-terms').views(getPreview('terms'))).icon(FiFileText),
               S.divider(),
               S.listItem().title('Subscription Terms').child(S.editor().id('subscriptionTerms').schemaType('subscriptionTerms').documentId('singleton-subscriptionTerms').views(getPreview('subscriptionTerms'))).icon(FiFileText),
+              S.divider(),
+              S.listItem().title('End User License Agreement').child(S.editor().id('eula').schemaType('eula').documentId('singleton-eula').views(getPreview('eula'))).icon(FiFileText),
             ])),
       S.divider(),
       S.listItem().title('Admin').child(S.editor().id('admin').schemaType('admin').documentId('singleton-admin').views(getPreview('admin'))).icon(FiGlobe),
