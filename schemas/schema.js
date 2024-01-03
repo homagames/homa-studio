@@ -16,6 +16,7 @@ import singletonAdmin from './singletonAdmin'
 import singletonNavigation from './singletonNavigation'
 import singletonBlog from './singletonBlog'
 import singletonFaqs from './singletonFaqs'
+import singletonCookiePolicy from './singletonCookiePolicy'
 
 // Documents
 import blog from './blog'
@@ -72,6 +73,7 @@ export default createSchema({
     singletonTerms,
     singletonSubscriptionTerms,
     singletonEula,
+    singletonCookiePolicy,
     singletonFaqs,
     singletonNavigation,
     singletonAdmin,
