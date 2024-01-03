@@ -11,6 +11,7 @@ const globalSlugs = {
   community: '/community',
   privacy: '/privacy',
   eula: '/end-user-license-agreement',
+  cookiePolicy: '/cookie-policy',
   marketingPages: '/marketing'
 }
 
