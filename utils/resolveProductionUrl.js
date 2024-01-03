@@ -9,7 +9,7 @@ const globalSlugs = {
   homaLab: '/homa-lab',
   products: '/homa-lab',
   community: '/community',
-  privacy: '/privacy',
+  privacy: '/privacy', 
   eula: '/end-user-license-agreement',
   cookiePolicy: '/cookie-policy',
   marketingPages: '/marketing'
