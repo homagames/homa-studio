@@ -39,6 +39,7 @@ import modularTextBlock from './common/modularTextBlock'
 import modularEmbedBlock from './common/modularEmbedBlock'
 import modularImageBlock from './common/modularImageBlock'
 import modularQuoteBlock from './common/modularQuoteBlock'
+import modularVideoBlock from './common/modularVideoBlock'
 import modularMarketingHeroBlock from './common/modularMarketingHeroBlock'
 import modularMarketingTextImageSplitBlock from './common/modularMarketingTextImageSplitBlock'
 import modularMarketingTextOverImageBlock from './common/modularMarketingTextOverImageBlock'
@@ -94,6 +95,7 @@ export default createSchema({
     modularEmbedBlock,
     modularImageBlock,
     modularQuoteBlock,
+    modularVideoBlock,
     modularMarketingHeroBlock,
     modularMarketingTextImageSplitBlock,
     modularMarketingTextOverImageBlock,

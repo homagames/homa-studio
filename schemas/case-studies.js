@@ -67,6 +67,7 @@ export default {
               of: [
                 {type: 'textBlock', title: 'Text'},
                 {type: 'modularImageBlock', title: 'Image'},
+                {type: 'modularVideoBlock', title: 'Video'},
                 {type: 'modularQuoteBlock', title: 'Quote'},
               ],
             }
