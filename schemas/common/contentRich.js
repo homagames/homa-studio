@@ -61,7 +61,8 @@ export default {
                 type: 'url',
                 title: 'URL',
                 validation: Rule => Rule.uri({
-                  scheme: ['http', 'https', 'mailto', 'tel']
+                  scheme: ['http', 'https', 'mailto', 'tel', '#'],
+                  allowRelative: true
                 })
               },
               {
@@ -120,6 +121,32 @@ export default {
         prepare() {
           return {
             title: 'Line',
+          }
+        }
+      }
+    },
+    { 
+      title: 'Anchor Point',
+      name: 'anchorId',
+      type: 'object',
+      fields: [{
+        name: 'title',
+        type: 'string',
+        hidden: true
+      },{
+        name: 'id',
+        title: 'ID',
+        description: 'a unique ID in which to link to',
+        type: 'string',
+      }],
+      preview: {
+        select: {
+          id: 'id'
+        },
+        prepare(selection) {
+          const {id} = selection
+          return {
+            title: `Anchor Point${id ? ` - #${id}` : ''}`,
           }
         }
       }
