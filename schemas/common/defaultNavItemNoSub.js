@@ -31,6 +31,7 @@ export default {
         {type: 'subscriptionTerms'},
         {type: 'terms'},
         {type: 'marketingPages'},
+        {type: 'cookiePolicy'},
         {type: 'blogLanding'},
         {type: 'products'},
       ],

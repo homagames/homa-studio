@@ -30,6 +30,7 @@ export default {
         {type: 'privacy'},
         {type: 'subscriptionTerms'},
         {type: 'terms'},
+        {type: 'cookiePolicy'},
         {type: 'marketingPages'},
         {type: 'blogLanding'},
         {type: 'products'},
