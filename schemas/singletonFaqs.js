@@ -18,9 +18,38 @@ export default {
       type: 'array', 
       of: [{type: 'block'}]
     },
+    // {
+    //   title: 'FAQs',
+    //   name: 'faqs',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       title: 'Item',
+    //       name: 'item',
+    //       type: 'object',
+    //       icon: FiArrowDownCircle,
+    //       fields: [
+    //         {name: 'question', type: 'string', title: 'Question'},
+    //         {name: 'answer', type: 'array', of: [{type: 'block'}], title: 'Answer'}
+    //       ],
+    //       preview: {
+    //         select: {
+    //           question: 'question'
+    //         },
+    //         prepare(selection) {
+    //           const {question} = selection
+    //           return {
+    //             title: question
+    //           }
+    //         }
+    //       }
+    //     }
+    //   ],
+    //   validation: Rule => Rule.required()
+    // },
     {
-      title: 'FAQs',
-      name: 'faqs',
+      title: 'FAQ Sections',
+      name: 'faqsSectioned',
       type: 'array',
       of: [
         {
@@ -29,17 +58,47 @@ export default {
           type: 'object',
           icon: FiArrowDownCircle,
           fields: [
-            {name: 'question', type: 'string', title: 'Question'},
-            {name: 'answer', type: 'array', of: [{type: 'block'}], title: 'Answer'}
+            {name: 'heading', type: 'string', title: 'Heading'},
+            {
+              title: 'FAQs',
+              name: 'faqsSectioned',
+              type: 'array',
+              of: [
+                {
+                  title: 'Item',
+                  name: 'item',
+                  type: 'object',
+                  icon: FiArrowDownCircle,
+                  fields: [
+                    {name: 'question', type: 'string', title: 'Question'},
+                    {name: 'answer', type: 'array', of: [{type: 'block'}], title: 'Answer'}
+                  ],
+                  preview: {
+                    select: {
+                      question: 'question'
+                    },
+                    prepare(selection) {
+                      const {question} = selection
+                      return {
+                        title: question
+                      }
+                    }
+                  }
+                }
+              ],
+              validation: Rule => Rule.required()
+            }
           ],
           preview: {
             select: {
-              question: 'question'
+              heading: 'heading',
+              faqsSectioned: 'faqsSectioned'
             },
             prepare(selection) {
-              const {question} = selection
+              const {heading, faqsSectioned} = selection
               return {
-                title: question
+                title: heading,
+                subtitle: `${faqsSectioned?.length} Items`
               }
             }
           }
