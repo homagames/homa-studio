@@ -13,6 +13,9 @@
   "keywords": [
     "sanity"
   ],
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@sanity/base": "^2.33.0",
     "@sanity/components": "^2.14.0",
