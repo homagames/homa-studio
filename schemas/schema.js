@@ -11,6 +11,7 @@ import singletonCareers from './singletonCareers'
 import singletonAbout from './singletonAbout'
 import singletonPrivacy from './singletonPrivacy'
 import singletonTerms from './singletonTerms'
+import singletonOldTerms from './singletonOldTerms'
 import singletonSubscriptionTerms from './singletonSubscriptionTerms'
 import singletonAdmin from './singletonAdmin'
 import singletonNavigation from './singletonNavigation'
@@ -72,6 +73,7 @@ export default createSchema({
     singletonAbout,
     singletonPrivacy,
     singletonTerms,
+    singletonOldTerms,
     singletonSubscriptionTerms,
     singletonEula,
     singletonCookiePolicy,
