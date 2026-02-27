@@ -2,7 +2,7 @@ export default {
   title: 'Old Terms',
   name: 'oldTerms',
   type: 'document',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
+  __experimental_actions: ['update', 'create', 'delete', 'publish'],
   fields: [
     {
       title: 'Title',
@@ -25,7 +25,7 @@ export default {
     select: {
       title: 'title'
     },
-    prepare ({ title }) {
+    prepare({ title }) {
       return {
         title
       }
