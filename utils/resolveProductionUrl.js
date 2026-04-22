@@ -15,7 +15,7 @@ const globalSlugs = {
   marketingPages: '/marketing'
 }
 
-const secret = process.env.SANITY_STUDIO_SANITY_PREVIEW_SECRET
+const secret = process.env.SANITY_PREVIEW_SECRET
 export const getGlobalSlug = (slug) => globalSlugs[slug]
 
 // Change remote url...
