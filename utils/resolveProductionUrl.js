@@ -15,7 +15,7 @@ const globalSlugs = {
   marketingPages: '/marketing'
 }
 
-const secret = process.env.SANITY_STUDIO_SANITY_PREVIEW_SECRET
+const secret = process.env.SANITY_PREVIEW_SECRET
 export const getGlobalSlug = (slug) => globalSlugs[slug]
 
 // Change remote url...
@@ -30,7 +30,7 @@ export const createUrl = ({ slug, globalSlug }) => {
   }
   let path = `${globalSlug}`
   if (slug) path += `/${slug.current}`
-  return `${previewURL}/api/preview?secret=skX61xvSWguyfpzqBt2mudIqp7Jb6bdEJ9vmJ2dk5Qjd3ONqkidgBNZaPFyxn62LmaEMgkxQOUAZwPf1bgUFdCoJrWCKyMkkCx7PuHobefnf93FE6h3AonmjPlM1m54Horpv2oMRbOqSsG6ILmEMOFdJVsSf6IRNruolEU0CiktWaoVWx8nL&slug=${path}`
+  return `${previewURL}/api/preview?secret=${secret}&slug=${path}`
 }
 
 export default function resolveProductionUrl (document) {
