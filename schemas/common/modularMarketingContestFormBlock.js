@@ -33,6 +33,20 @@ export default {
       description: '[Optional] link for the "Terms and Conditions" checkbox',
     },
     {
+      title: 'Required video width (px)',
+      name: 'requiredWidth',
+      type: 'number',
+      initialValue: 1080,
+      description: 'Entries not matching this width are flagged (yellow) in the sheet. Leave blank to skip the check.',
+    },
+    {
+      title: 'Required video height (px)',
+      name: 'requiredHeight',
+      type: 'number',
+      initialValue: 1920,
+      description: 'Entries not matching this height are flagged (yellow) in the sheet. Leave blank to skip the check.',
+    },
+    {
       title: 'Submit button text',
       name: 'submitButtonText',
       type: 'string',
