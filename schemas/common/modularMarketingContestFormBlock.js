@@ -20,10 +20,17 @@ export default {
       description: '[Optional] text below the heading',
     },
     {
-      title: 'Game name',
-      name: 'gameName',
+      title: 'Creative code prefix',
+      name: 'codePrefix',
       type: 'string',
-      description: '[Optional] if set, the game is fixed to this value and the entrant is not asked for it (e.g. "Marble Sort")',
+      initialValue: 'HKI',
+      description: 'Prefix for the auto-generated creative name, e.g. "HKI" → HKI_X14_WW_VID_1080x1920_45s.mp4',
+    },
+    {
+      title: 'Terms & Conditions URL',
+      name: 'termsUrl',
+      type: 'url',
+      description: '[Optional] link for the "Terms and Conditions" checkbox',
     },
     {
       title: 'Submit button text',
