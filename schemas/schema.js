@@ -55,6 +55,7 @@ import modularMarketingMultipleCtaBlock from './common/modularMarketingMultipleC
 import modularMarketingTextIconBlock from './common/modularMarketingTextIconBlock'
 import modularMarketingHubspotFormBlock from './common/modularMarketingHubspotFormBlock'
 import modularMarketingContestFormBlock from './common/modularMarketingContestFormBlock'
+import modularMarketingFaqBlock from './common/modularMarketingFaqBlock'
 import modularMarketingIconBlock from './common/modularMarketingIconBlock'
 import modularMarketingStatListBlock from './common/modularMarketingStatListBlock'
 import modularMarketingImageCarouselBlock from './common/modularMarketingImageCarouselBlock'
@@ -113,6 +114,7 @@ export default createSchema({
     modularMarketingTextIconBlock,
     modularMarketingHubspotFormBlock,
     modularMarketingContestFormBlock,
+    modularMarketingFaqBlock,
     modularMarketingIconBlock,
     modularMarketingStatListBlock,
     modularMarketingImageCarouselBlock,
