@@ -29,6 +29,7 @@ export default {
         {type: 'modularMarketingHubspotFormBlock', title: 'Hubspot Form Block'},
         {type: 'modularMarketingContestFormBlock', title: 'Contest Form Block'},
         {type: 'modularMarketingFaqBlock', title: 'FAQ Block'},
+        {type: 'modularMarketingVideoGalleryBlock', title: 'Video Examples Block'},
         {type: 'modularMarketingCareersBlock', title: 'Careers Block'},
         {type: 'modularMarketingCaseStudiesBlock', title: 'Case Studies Block'},
         {type: 'modularMarketingNewsFeedBlock', title: 'News Feed Block'},
