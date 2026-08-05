@@ -39,7 +39,14 @@ export default {
               title: 'Label',
               name: 'label',
               type: 'string',
-              description: '[Optional] caption shown under the video',
+              description: '[Optional] short caption shown under the video',
+            },
+            {
+              title: 'Why it works',
+              name: 'note',
+              type: 'text',
+              rows: 3,
+              description: '[Optional] a sentence or two on why this creative works — shown under the video',
             },
           ],
           preview: {
