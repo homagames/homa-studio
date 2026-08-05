@@ -27,6 +27,8 @@ export default {
         {type: 'modularMarketingTextIconBlock', title: 'Text + Icon Block'},
         {type: 'modularMarketingIconBlock', title: 'Icon Block'},
         {type: 'modularMarketingHubspotFormBlock', title: 'Hubspot Form Block'},
+        {type: 'modularMarketingContestFormBlock', title: 'Contest Form Block'},
+        {type: 'modularMarketingFaqBlock', title: 'FAQ Block'},
         {type: 'modularMarketingCareersBlock', title: 'Careers Block'},
         {type: 'modularMarketingCaseStudiesBlock', title: 'Case Studies Block'},
         {type: 'modularMarketingNewsFeedBlock', title: 'News Feed Block'},
