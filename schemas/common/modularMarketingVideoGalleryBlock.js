@@ -20,6 +20,20 @@ export default {
       description: '[Optional] intro text below the heading',
     },
     {
+      title: 'Layout',
+      name: 'layout',
+      type: 'string',
+      initialValue: 'carousel',
+      description: 'Carousel = YouTube embeds. Phone grid = vertical MP4s shown in phone mockups (needs "Video File URL" per item).',
+      options: {
+        list: [
+          { title: 'Carousel (YouTube)', value: 'carousel' },
+          { title: 'Phone grid (MP4)', value: 'phoneGrid' },
+        ],
+        layout: 'radio',
+      },
+    },
+    {
       title: 'Videos',
       name: 'videos',
       type: 'array',
@@ -32,8 +46,13 @@ export default {
               title: 'YouTube URL',
               name: 'url',
               type: 'url',
-              description: 'Paste the full YouTube link, e.g. https://www.youtube.com/watch?v=…',
-              validation: (Rule) => Rule.required(),
+              description: 'Carousel layout: the full YouTube link, e.g. https://www.youtube.com/watch?v=…',
+            },
+            {
+              title: 'Video File URL (MP4)',
+              name: 'videoFileUrl',
+              type: 'url',
+              description: 'Phone-grid layout: a direct link to a vertical MP4 (9:16, muted-friendly). Used instead of the YouTube URL.',
             },
             {
               title: 'Label',

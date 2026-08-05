@@ -58,6 +58,7 @@ import modularMarketingHubspotFormBlock from './common/modularMarketingHubspotFo
 import modularMarketingContestFormBlock from './common/modularMarketingContestFormBlock'
 import modularMarketingFaqBlock from './common/modularMarketingFaqBlock'
 import modularMarketingVideoGalleryBlock from './common/modularMarketingVideoGalleryBlock'
+import modularMarketingAppStoreButtonsBlock from './common/modularMarketingAppStoreButtonsBlock'
 import modularMarketingIconBlock from './common/modularMarketingIconBlock'
 import modularMarketingStatListBlock from './common/modularMarketingStatListBlock'
 import modularMarketingImageCarouselBlock from './common/modularMarketingImageCarouselBlock'
@@ -119,6 +120,7 @@ export default createSchema({
     modularMarketingContestFormBlock,
     modularMarketingFaqBlock,
     modularMarketingVideoGalleryBlock,
+    modularMarketingAppStoreButtonsBlock,
     modularMarketingIconBlock,
     modularMarketingStatListBlock,
     modularMarketingImageCarouselBlock,

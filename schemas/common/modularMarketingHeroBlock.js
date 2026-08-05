@@ -67,6 +67,18 @@ export default {
       }
     },
     {
+      title: 'Side Image',
+      name: 'heroSideImage',
+      description: '[OPTIONAL] an illustration shown on the right side of the hero (PNG/WebP/SVG, transparent bg if a cutout). Overridden by "Side Video URL" if that is set.',
+      type: 'defaultImage',
+    },
+    {
+      title: 'Side Video URL',
+      name: 'heroSideVideoUrl',
+      description: '[OPTIONAL] a looping, muted MP4 shown on the right side of the hero. Takes precedence over "Side Image".',
+      type: 'url',
+    },
+    {
       title: 'CTA Button Text',
       name: 'ctaButtonText',
       description: '[OPTIONAL] the text to display in the CTA button',
