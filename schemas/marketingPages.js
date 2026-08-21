@@ -39,6 +39,7 @@ export default {
         {type: 'modularMarketingGamesFeedBlock', title: 'Games Feed Block'},
         {type: 'modularMarketingStatListBlock', title: 'Stat List Block'},
         {type: 'modularMarketingContestRulesBlock', title: 'Contest Rules Block'},
+        {type: 'modularMarketingContestEssentialsBlock', title: 'Contest Essentials Block'},
         {type: 'modularMarketingImageCarouselBlock', title: 'Image Carousel Block'},
         {type: 'embedBlock', title: 'Embed'},
       ],
