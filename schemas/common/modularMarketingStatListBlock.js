@@ -37,6 +37,13 @@ export default {
       validation: Rule => Rule.required().max(6)
     },
     {
+      title: 'Uniform Heading Heights',
+      name: 'uniformHeadings',
+      description: 'Toggling this on reserves a consistent 2-line height for every item heading (desktop), so cards line up when some headings wrap to two lines and others are one. Leave off for short/numeric stat headings.',
+      type: 'boolean',
+      defaultValue: false,
+    },
+    {
       title: 'Remove Top Border',
       name: 'removeTopBorder',
       description: 'Toggling this on will remove the border from the top of this component',
