@@ -98,6 +98,18 @@ export default {
       type: 'string',
       hidden: ({ parent, value }) => !value && !parent?.ctaButtonText
     },
+    {
+      title: 'App Store URL',
+      name: 'appStoreUrl',
+      description: '[OPTIONAL] shows an Apple App Store badge below the CTA button, linking to this URL',
+      type: 'url',
+    },
+    {
+      title: 'Google Play URL',
+      name: 'googlePlayUrl',
+      description: '[OPTIONAL] shows a Google Play badge below the CTA button, linking to this URL',
+      type: 'url',
+    },
   ],
   preview: {
     select: {
