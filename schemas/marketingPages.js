@@ -38,6 +38,7 @@ export default {
         {type: 'modularMarketingPeopleCarouselBlock', title: 'People Carousel Block'},
         {type: 'modularMarketingGamesFeedBlock', title: 'Games Feed Block'},
         {type: 'modularMarketingStatListBlock', title: 'Stat List Block'},
+        {type: 'modularMarketingContestRulesBlock', title: 'Contest Rules Block'},
         {type: 'modularMarketingImageCarouselBlock', title: 'Image Carousel Block'},
         {type: 'embedBlock', title: 'Embed'},
       ],

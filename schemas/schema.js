@@ -61,6 +61,7 @@ import modularMarketingVideoGalleryBlock from './common/modularMarketingVideoGal
 import modularMarketingAppStoreButtonsBlock from './common/modularMarketingAppStoreButtonsBlock'
 import modularMarketingIconBlock from './common/modularMarketingIconBlock'
 import modularMarketingStatListBlock from './common/modularMarketingStatListBlock'
+import modularMarketingContestRulesBlock from './common/modularMarketingContestRulesBlock'
 import modularMarketingImageCarouselBlock from './common/modularMarketingImageCarouselBlock'
 import singletonEula from './singletonEula'
 
@@ -123,6 +124,7 @@ export default createSchema({
     modularMarketingAppStoreButtonsBlock,
     modularMarketingIconBlock,
     modularMarketingStatListBlock,
+    modularMarketingContestRulesBlock,
     modularMarketingImageCarouselBlock,
     seo
   ]),
