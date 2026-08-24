@@ -2,7 +2,9 @@ export default {
   title: 'Contest Rules',
   name: 'contestRules',
   type: 'document',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
+  // 'create' stays enabled so the singleton's first document can be made — the
+  // desk structure only ever opens this one fixed documentId, so no duplicates.
+  __experimental_actions: ['create', 'update', /* 'delete', */ 'publish'],
   fields: [
     {
       title: 'Title',
