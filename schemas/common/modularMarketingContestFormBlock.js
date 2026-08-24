@@ -27,10 +27,21 @@ export default {
       description: 'Prefix for the auto-generated creative name, e.g. "HKI" → HKI_X14_WW_VID_1080x1920_45s.mp4',
     },
     {
-      title: 'Terms & Conditions URL',
+      title: 'Contest Rules URL',
       name: 'termsUrl',
-      type: 'url',
-      description: '[Optional] link for the "Terms and Conditions" checkbox',
+      type: 'string',
+      initialValue: '/creative-contest/rules',
+      description: 'Link opened by the acceptance checkbox. Defaults to the Rules page (/creative-contest/rules); opens in a new tab.',
+    },
+    {
+      // Recorded into the tracking sheet for every entry so we can prove which
+      // version of the Rules each entrant accepted. MUST match the "Rules
+      // version" on the Contest Rules document (Legal → Contest Rules).
+      title: 'Contest Rules version',
+      name: 'rulesVersion',
+      type: 'string',
+      initialValue: 'v1.0',
+      description: 'Must match the "Rules version" on the Contest Rules doc. Written to the sheet per entry — bump both together when the Rules change.',
     },
     {
       title: 'Required video width (px)',

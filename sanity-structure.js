@@ -139,6 +139,8 @@ export default () =>
               S.listItem().title('Cookie Policy').child(S.editor().id('cookiePolicy').schemaType('cookiePolicy').documentId('singleton-cookiePolicy').views(getPreview('cookiePolicy'))).icon(FiFileText),
               S.divider(),
               S.listItem().title('Company Index').child(S.editor().id('companyIndex').schemaType('companyIndex').documentId('singleton-companyIndex').views(getPreview('companyIndex'))).icon(FiFileText),
+              S.divider(),
+              S.listItem().title('Contest Rules').child(S.editor().id('contestRules').schemaType('contestRules').documentId('singleton-contestRules').views(getPreview('contestRules'))).icon(FiFileText),
             ])),
       S.divider(),
       S.listItem().title('Admin').child(S.editor().id('admin').schemaType('admin').documentId('singleton-admin').views(getPreview('admin'))).icon(FiGlobe),
