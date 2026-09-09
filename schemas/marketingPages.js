@@ -73,6 +73,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Serve at top-level URL',
+      name: 'topLevelPath',
+      type: 'boolean',
+      description: 'Also serve this page at homagames.com/<slug> (instead of only /marketing/<slug>). Needed e.g. for game homepages used in Google OAuth verification. Takes effect on the next site deploy.',
+      initialValue: false
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

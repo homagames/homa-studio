@@ -11,6 +11,13 @@ export default {
       name: 'text',
       type: 'contentRich',
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Centered',
+      name: 'centered',
+      type: 'boolean',
+      description: 'Center-align the text in this block (default is left-aligned)',
+      initialValue: false
     }
   ],
   preview: {
