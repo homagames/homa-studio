@@ -14,7 +14,7 @@
     "sanity"
   ],
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   },
   "dependencies": {
     "@sanity/base": "^2.33.0",
